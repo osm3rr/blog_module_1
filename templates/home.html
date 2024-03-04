@@ -3,7 +3,7 @@
 {% block content %}
     {% for item in article_list %}
         <h2>
-            <a href="">{{ item.title }}</a>
+            <a href="{% url 'post_detail' item.pk %}">{{ item.title }}</a>
         </h2>
         <p>
             {{ item.body }}

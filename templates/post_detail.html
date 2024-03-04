@@ -6,4 +6,5 @@
     <p>{{ article.body }}</p>
 
     <a href="{% url 'article_edit' article.pk %}">Edit article</a>
+    <a href="{% url 'article_delete' article.pk %}">Delete article</a>
 {% endblock content %}
